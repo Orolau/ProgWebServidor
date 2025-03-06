@@ -1,0 +1,118 @@
+GET http://localhost:3006/api/tracks
+api_key: Api-publica-123
+authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NWEwNGMwZjViZDE1NWY5OGZlYzMiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQxMjUwODk2LCJleHAiOjE3NDEyNTgwOTZ9.OmTmHDO8FlNIfiI_0YE8zqdJ5wj8te8O8Z8l0vxgRAE
+
+### 
+GET http://localhost:3006/api/tracks/67c826a74a22ec937e8d1a5c
+api_key: Api-publica-123
+###
+POST http://localhost:3006/api/tracks/
+Content-Type: application/json
+api_key: Api-publica-123
+authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+
+
+{
+    "artist": {
+        "name": "saray",
+        "nickname": "lara",
+        "edad": 21,
+        "nationality": "spain"
+    },
+    "album": "albun34",
+    "cover": "https://github.com/anaishh/backend-2025/tree/main/utils",
+    "duration":{
+        "start": 1,
+        "end":7
+    },
+    "mediaId":"67c827af8fa29072e1c3481e"
+}
+###
+DELETE http://localhost:3006/api/tracks/67c960b3f2b87a1a80611319
+api_key: Api-publica-123
+###
+PUT http://localhost:3006/api/tracks/67adbf1e37668b2f24c00a04
+Content-Type: application/json
+api_key: Api-publica-123
+
+{
+    "artist": {
+        "name": "laura",
+        "nickname": "lau",
+        "edad": 20,
+        "nationality": "spain"
+    },
+    "album": "nombreAlbum",
+    "cover": "https://github.com/anaishh/backend-2025/tree/main/utils",
+    "duration":{
+        "start": 1,
+        "end":7
+    }
+}
+###
+GET http://localhost:3006/api/user
+api_key: Api-publica-123
+authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NWEwNGMwZjViZDE1NWY5OGZlYzMiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQxMjQ5MDI4LCJleHAiOjE3NDEyNTYyMjh9.EdnpajWZRbd8V3taOSDcWpV7Kfbehu3lAQ6prfNTWkg
+
+###
+POST http://localhost:3006/api/auth/register
+Content-Type: application/json
+api_key: Api-publica-123
+
+{
+    "name": "enrique",
+    "age": 20,
+    "email": "enrique@utad.com",
+    "role":"admin",
+    "password": "asdfghjkl"
+}
+
+###
+POST http://localhost:3006/api/auth/login
+Content-Type: application/json
+api_key: Api-publica-123
+
+{
+    "email": "enrique@utad.com",
+    "password": "asdfghjkl"
+}
+
+###
+POST http://localhost:3006/api/user
+Content-Type: application/json
+api_key: Api-publica-123
+
+{
+    "name": "sergio",
+    "age": 20,
+    "email": "sergio@utad.com",
+    "role":"admin",
+    "password": "asdfghjkl"
+}
+
+###
+PUT http://localhost:3006/api/user/role/67c9617bf27a699c7f650c68
+Content-Type: application/json
+api_key: Api-publica-123
+authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+
+{
+    "role":"admin"
+}
+
+### 
+DELETE http://localhost:3005/api/tracks/67adba5fec23da6c58c57341
+
+###
+POST http://localhost:3006/api/storage/memory HTTP/1.1
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="image"; filename="bici.jpg"
+Content-Type: image/jpeg
+
+< ./bici.jpg
+--boundary123--
+
+
+###

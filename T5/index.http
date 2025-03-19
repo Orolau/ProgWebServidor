@@ -116,3 +116,14 @@ Content-Type: image/jpeg
 
 
 ###
+POST http://localhost:3006/api/email
+Content-Type: application/json
+api_key: Api-publica-123
+authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+
+{
+    "from": "claseprogwebservidor82@gmail.com",
+    "to": "lau.ap04@gmail.com",
+    "text": "Hola Laura",
+    "subject":"Saludo"
+}

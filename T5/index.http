@@ -1,6 +1,6 @@
-GET http://localhost:3006/api/tracks
+GET http://localhost:3006/api/user
 api_key: Api-publica-123
-authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NWEwNGMwZjViZDE1NWY5OGZlYzMiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQxMjUwODk2LCJleHAiOjE3NDEyNTgwOTZ9.OmTmHDO8FlNIfiI_0YE8zqdJ5wj8te8O8Z8l0vxgRAE
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2U1MTQ0YzllNDBmMThlYTRiNmYwNDMiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MzA2NjE4OCwiZXhwIjoxNzQzMDczMzg4fQ.E-HPh4c2w1L2-fl1Y2XsIdKUeL6Hms1SlMxZLzgBqkI
 
 ### 
 GET http://localhost:3006/api/tracks/67c826a74a22ec937e8d1a5c
@@ -9,7 +9,7 @@ api_key: Api-publica-123
 POST http://localhost:3006/api/tracks/
 Content-Type: application/json
 api_key: Api-publica-123
-authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
 
 
 {
@@ -52,7 +52,7 @@ api_key: Api-publica-123
 ###
 GET http://localhost:3006/api/user
 api_key: Api-publica-123
-authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NWEwNGMwZjViZDE1NWY5OGZlYzMiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQxMjQ5MDI4LCJleHAiOjE3NDEyNTYyMjh9.EdnpajWZRbd8V3taOSDcWpV7Kfbehu3lAQ6prfNTWkg
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NWEwNGMwZjViZDE1NWY5OGZlYzMiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzQxMjQ5MDI4LCJleHAiOjE3NDEyNTYyMjh9.EdnpajWZRbd8V3taOSDcWpV7Kfbehu3lAQ6prfNTWkg
 
 ###
 POST http://localhost:3006/api/auth/register
@@ -94,7 +94,7 @@ api_key: Api-publica-123
 PUT http://localhost:3006/api/user/role/67c9617bf27a699c7f650c68
 Content-Type: application/json
 api_key: Api-publica-123
-authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
 
 {
     "role":"admin"
@@ -119,7 +119,7 @@ Content-Type: image/jpeg
 POST http://localhost:3006/api/email
 Content-Type: application/json
 api_key: Api-publica-123
-authoritation: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M5NjI5MDFiNjIxM2ZjMjRhNTVmZDIiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTc0MTI1MTIxNiwiZXhwIjoxNzQxMjU4NDE2fQ.SULA-ChSDTjaftBDJebOaMgFCJIOhCb4940RxnRipj0
 
 {
     "from": "claseprogwebservidor82@gmail.com",

@@ -7,7 +7,7 @@ const authMiddleware = require("../midelware/session.js");
 const checkRole = require("../midelware/checkRole.js")
 const updateUserMiddleware = require("../midelware/updateUserMiddleware.js")
 
-router.get("/", customHeader, getItems);
+router.get("/", authMiddleware, getItems);
 router.get("/:id",validatorGetItem, customHeader, getItem);
 router.post("/", validatorCreateItem, customHeader, createItem);
 router.delete("/:id", validatorCreateItem, customHeader, deleteItem);
